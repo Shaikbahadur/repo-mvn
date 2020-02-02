@@ -76,7 +76,15 @@
             <groupId>org.eurekaclinical</groupId>
             <artifactId>eurekaclinical-common</artifactId>
             <version>${eurekaclinical-common-version}</version>
-        </dependency>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.jvnet.hudson.main/hudson-war -->
+    <dependency>
+	        <groupId>org.jvnet.hudson.main</groupId>
+		    <artifactId>hudson-war</artifactId>
+		        <version>2.2.1</version>
+			    <scope>test</scope>
+		    </dependency>
+
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
