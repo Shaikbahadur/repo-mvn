@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context>
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+
+    <Resource name="jdbc/${dataSource}" auth="Container"
+              type="javax.sql.DataSource" driverClassName="org.h2.Driver"
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              url="jdbc:h2:file:${basedir}/target/db/db"
+              initialSize="3" maxActive="20" maxIdle="1" minIdle="1"
+              maxWait="-1"/>
+</Context>

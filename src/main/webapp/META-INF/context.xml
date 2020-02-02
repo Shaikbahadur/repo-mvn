@@ -1,34 +1,23 @@
-<?xml version='1.0' encoding='utf-8'?>
-<Context path="/Entando" docBase="./Entando" debug="1" reloadable="false">
+<!--
+  #%L
+  learning
+  %%
+  Copyright (C) 2016 Emory University
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
 
-	<Environment name="logActiveFileOutput" value="true" type="java.lang.String" override="false" />
-	<Environment name="logName" value="Entando" type="java.lang.String" override="false" />
-	<Environment name="logFileRotatePattern" value="/home/wiz/git/Entando/target/log_Entando" type="java.lang.String" override="false" />
-	<Environment name="logLevel" value="DEBUG" type="java.lang.String" override="false" />
-	<Environment name="logFileSize" value="200000" type="java.lang.String" override="false" />
-	<Environment name="logFilesCount" value="10" type="java.lang.String" override="false" />
-
-	<Environment name="configVersion" value="production" type="java.lang.String" override="false" />
-
-	<Environment name="applicationBaseURL" value="http://localhost:8080/Entando/" type="java.lang.String" override="false" />
-	<Environment name="resourceRootURL" value="/Entando/resources/" type="java.lang.String" override="false" />
-	<Environment name="protectedResourceRootURL" value="/Entando/protected/" type="java.lang.String" override="false" />
-
-	<Environment name="resourceDiskRootFolder" value="/home/wiz/git/Entando/src/main/webapp/resources" type="java.lang.String" override="false" />
-	<Environment name="protectedResourceDiskRootFolder" value="/home/wiz/git/Entando/src/main/webapp/protected" type="java.lang.String" override="false" />
-
-	<Environment name="indexDiskRootFolder" value="/home/wiz/git/target/temp/indexdir" type="java.lang.String" override="false" />
-
-	<Resource name="jdbc/portDataSource" auth="Container"
-		type="javax.sql.DataSource" driverClassName="org.postgresql.Driver"
-		maxActive="8" maxIdle="4"
-		username="agile" password="agile"
-		url="jdbc:postgresql://localhost:5432/EntandoPort" />
-
-	<Resource name="jdbc/servDataSource" auth="Container"
-		type="javax.sql.DataSource" driverClassName="org.postgresql.Driver"
-		maxActive="8" maxIdle="4"
-		username="agile" password="agile"
-		url="jdbc:postgresql://localhost:5432/EntandoServ" />
-
+<Context>
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
 </Context>
